@@ -70,6 +70,12 @@ export default {
     methods: {
       handleSelectionChange(val) {
         this.multipleSelection = val;
+      },
+      getData() {
+        this.$store.dispatch('openUrl',{params})
+        .then(()=>{
+
+        })
       }
     }
 }
